@@ -13,4 +13,8 @@ app.get('/:nome', function (req, res) {
     res.send(`Olá ${req.params.nome}`)
   })
    
-app.listen(3000)
+  const port = 3000;
+
+app.listen(port, function (){
+  console.log("Listenning on port:" + port )
+})                            
